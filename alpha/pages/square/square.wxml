@@ -1,0 +1,71 @@
+<view class="container">
+
+<!-- 搜索模块 -->
+<view class="search-module">
+  <button bindtap="navigateToSearch">搜索菜谱</button>
+</view>
+
+<!-- 今日推荐菜谱 -->
+<view class="recommended-recipe">
+  <text class="recommendation-text">今日推荐菜谱</text>
+</view>
+
+<!-- 图片模块 -->
+<swiper class="image-swiper" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+  <swiper-item>
+    <image src="https://tse1-mm.cn.bing.net/th/id/OIP-C.s6dpfSeTuglKhh1UbDEZDQHaE8?w=285&h=190&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="slide-image" mode="aspectFill"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="https://tse4-mm.cn.bing.net/th/id/OIP-C.XBgC722_HMgjgITehYzfEQHaEK?w=308&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="slide-image" mode="aspectFill"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="https://tse3-mm.cn.bing.net/th/id/OIP-C.oTlzfP7zbVK9tfXJM2yBiQHaE8?w=197&h=190&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="slide-image" mode="aspectFill"></image>
+  </swiper-item>
+</swiper>
+
+<!-- 菜品分类图标模块 -->
+<view class="category-icons">
+  <view class="category-row">
+    <view class="category-item" bindtap="navigateToCategory" data-category="清炒小菜">
+      <image src="https://ts3.cn.mm.bing.net/th?id=OIP-C.VHkoxFlDN69c6lsI9SP2nAHaJ4&w=216&h=288&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      <text>清炒小菜</text>
+    </view>
+    <view class="category-item" bindtap="navigateToCategory" data-category="川香麻辣">
+      <image src="https://ts4.cn.mm.bing.net/th?id=OIP-C.prky5k_CuywFD1K9GvB2agHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      <text>川香麻辣</text>
+    </view>
+    <view class="category-item" bindtap="navigateToCategory" data-category="异国风味">
+      <image src="https://ts2.cn.mm.bing.net/th?id=OIP-C.EzS3pKQAjC0__fo4DcPLjgHaGA&w=277&h=225&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      <text>异国风味</text>
+    </view>
+  </view>
+  <view class="category-row">
+    <view class="category-item" bindtap="navigateToCategory" data-category="汤类炖品">
+      <image src="https://ts1.cn.mm.bing.net/th?id=OIP-C.ksmQJHit8Uq1XWnU5OFnHwHaLH&w=204&h=306&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      <text>汤类炖品</text>
+    </view>
+    <view class="category-item" bindtap="navigateToCategory" data-category="低卡轻食">
+      <image src="https://ts4.cn.mm.bing.net/th?id=OIP-C.YKm9qVmfG0DC77cRcbZ8cAHaHf&w=248&h=251&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      <text>低卡轻食</text>
+    </view>
+    <view class="category-item" bindtap="navigateToCategory" data-category="家常小菜">
+      <image src="data:image/jpeg;base64,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" class="category-icon"></image>
+      <text>家常小菜</text>
+    </view>
+  </view>
+  <view class="category-row">
+    <view class="category-item" bindtap="navigateToCategory" data-category="海鲜料理">
+      <image src="https://ts4.cn.mm.bing.net/th?id=OIP-C.LwCqklKaUClh-O_e_mLVuQHaLH&w=204&h=306&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      <text>海鲜料理</text>
+    </view>
+    <view class="category-item" bindtap="navigateToCategory" data-category="肉类烹饪">
+      <image src="https://ts1.cn.mm.bing.net/th?id=OIP-C.GjZ6sifj-0x3jkfIwOfzYQHaE7&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      <text>肉类烹饪</text>
+    </view>
+    <view class="category-item" bindtap="navigateToCategory" data-category="甜品点心">
+      <image src="https://ts2.cn.mm.bing.net/th?id=OIP-C.hi0ahAxdqyLVNfwqZPjuBQHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      <text>甜品点心</text>
+    </view>
+  </view>
+</view>
+</view>

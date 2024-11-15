@@ -1,0 +1,39 @@
+<view class="container">
+  <image class="detail-image" src="{{detail.imageUrl}}"/>
+
+  <view class="detail-info">
+    <text class="detail-title">{{detail.title}}</text>
+    <text class="detail-description">{{detail.description}}</text>
+
+    <view class="ingredients">
+      <text class="section-title">材料：</text>
+      <text>{{detail.ingredients}}</text>
+    </view>
+
+    <view class="steps">
+      <text class="section-title">步骤：</text>
+      <view wx:for="{{detail.steps}}" wx:key="*this">
+        <text class="step">{{item}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 收藏按钮 -->
+  <button class="collect-btn" bindtap="toggleCollect">
+    {{isCollected ? '取消收藏' : '收藏菜谱'}}
+  </button>
+
+  <!-- 评论部分 -->
+  <view class="comments">
+    <text class="comments-title">用户评论</text>
+    <view wx:for="{{comments}}" wx:key="*this">
+      <view class="comment-item">
+        <text class="comment-user">{{item.user}}:</text>
+        <text class="comment-text">{{item.text}}</text>
+      </view>
+    </view>
+
+    <!-- 更多评论按钮 -->
+    <button class="more-comments-btn" bindtap="goToReviews">更多评论</button>
+  </view>
+</view>

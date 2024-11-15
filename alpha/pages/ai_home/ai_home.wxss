@@ -1,0 +1,98 @@
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 92vh;
+  padding: 20rpx;
+  margin-top: 70rpx;
+}
+
+.message-list {
+  flex: 1;
+  padding: 10rpx;
+  overflow-y: scroll;
+}
+
+.message-item {
+  display: flex;
+  margin-bottom: 10rpx;
+}
+.user .message-item {
+  justify-content: flex-end;
+}
+
+.bot .message-item {
+  justify-content: flex-start;
+}
+
+.message-content {
+  padding: 10rpx;
+  border-radius: 10rpx;
+  max-width: 80%;
+}
+
+.message-text {
+  color: #fff;
+  word-wrap: break-word;
+}
+
+.user {
+  align-self: flex-end;
+  background-color: #60a6ec;
+}
+
+.bot {
+  align-self: flex-start;
+  background-color: #aaadaa;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 60rpx; /* 减少上边距以适应导航栏的高度 */
+}
+
+.input {
+  width: 100%;
+  padding: 10rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 0rpx;
+}
+
+.send-button {
+ 
+  padding: 10rpx 20rpx;
+  background-color: #067956;
+  color: #fff;
+  border-radius: 0rpx;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80rpx; /* 调整导航栏的高度 */
+  padding: 0;
+  background-color: #f2f2f2;
+  border-top: 1rpx solid #ccc;
+  z-index: 10;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  padding: 20rpx 0; /* 调整内边距以适应新的高度 */
+  border-radius: 10rpx;
+  background-color: #fff;
+  color: #000000;
+  font-weight: bold;
+}

@@ -1,0 +1,67 @@
+/* search.wxss */
+.container {
+  padding: 20rpx;
+}
+
+.search-container {
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  margin-bottom: 15rpx;
+}
+
+.search-input {
+  width: 80%; /* 设置输入框宽度 */
+  padding: 15rpx;
+  border: 1px solid #ddd;
+  border-radius: 5rpx;
+}
+
+.search-button {
+  width: 18%; /* 设置按钮宽度 */
+  padding: 15rpx;
+  background-color: #f75003;
+  color: #fff;
+  border-radius: 5rpx;
+  text-align: center;
+  margin-left: 2%; /* 按钮与输入框之间的间距 */
+}
+
+.recipe-card {
+  margin-top: 20rpx;
+  padding: 15rpx;
+  border: 1px solid #ddd;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 10rpx;
+}
+
+.recipe-info {
+  margin-top: 10rpx;
+  width: 100%;
+}
+
+.recipe-name {
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.recipe-description {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+
+.recipe-ingredients,
+.recipe-steps {
+  font-size: 24rpx;
+  color: #333;
+  margin-top: 10rpx;
+}

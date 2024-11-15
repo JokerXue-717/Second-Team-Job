@@ -1,0 +1,25 @@
+<view class="container">
+  <!-- 返回按钮 -->
+  <view class="back-button" bindtap="goBack">
+    <image class="back-icon" src="https://img.51miz.com/Element/00/77/80/10/c6ce1c01_E778010_19c1ee77.png" mode="aspectFill" style="width: 58rpx; height: 43rpx; display: inline-block; box-sizing: border-box; position: relative; left: -310rpx; top: -164rpx"></image>
+  </view>
+
+  <!-- 用户评价列表 -->
+  <view class="reviews-list" style="position: relative; left: -1rpx; top: -97rpx">
+    <!-- 循环遍历每个评价 -->
+    <view class="review-item" wx:for="{{reviews}}" wx:key="index">
+      <!-- 评价内容 -->
+      <view class="review-content">
+        <text class="review-text">{{item.content}}</text>
+      </view>
+      <!-- 评价者信息 -->
+      <view class="reviewer-info">
+        <image class="reviewer-avatar" src="{{item.reviewerAvatar}}" mode="aspectFill"></image>
+        <text class="reviewer-name">{{item.reviewerName}}</text>
+        <view class="review-rating">
+          <text class="star-rating">⭐⭐⭐⭐⭐</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
