@@ -1,0 +1,17 @@
+<view class="publish-container">
+  <!-- 输入框 -->
+  <textarea bindinput="onContentInput" placeholder="分享你的动态..." value="{{content}}" />
+
+  <!-- 选择图片按钮 -->
+  <button bindtap="chooseImage">选择图片</button>
+
+  <!-- 显示选中的图片 -->
+  <view class="image-preview">
+    <block wx:for="{{imageUrl}}" wx:key="*this">
+      <image src="{{item}}" mode="aspectFill" />
+    </block>
+  </view>
+
+  <!-- 发布按钮 -->
+  <button bindtap="publishPost" type="primary">发布</button>
+</view>

@@ -1,0 +1,13 @@
+<view class="diary-page">
+    <view class="header" style="height: 62rpx; display: flex; box-sizing: border-box; width: 149rpx">
+        
+        <text>大厨日记</text>
+    </view>
+    <view class="date">
+        <text>2024年10月5日</text>
+    </view>
+    <view class="content">
+        <text>今天跟着软件里的AI菜谱做出了糖醋排骨，好神奇的体验！我竟然靠AI做出了一道菜，而且味道还不错！今天是值得记录的一天！</text>
+    </view>
+    <image class="diary-image" src="https://cp1.douguo.com/upload/caiku/9/f/d/yuan_9ffaa843f92d72dd7a53ef97afeff63d.jpg" mode="aspectFit" />
+</view>

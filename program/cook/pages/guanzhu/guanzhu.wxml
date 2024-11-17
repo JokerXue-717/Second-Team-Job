@@ -1,0 +1,18 @@
+<!-- pages/follow/follow.wxml -->
+<view class="container">
+    <view class="header">
+        <text class="title">我的关注</text>
+    </view>
+    <view class="follow-list">
+        <block wx:for="{{follows}}" wx:key="index">
+            <view class="follow-item" data-index="{{index}}" bindtap="viewProfile">
+                <image class="avatar" src="{{item.avatar}}" mode="circle" />
+                <view class="info">
+                    <text class="nickname">{{item.nickname}}</text>
+                    <text class="description">{{item.description}}</text>
+                </view>
+                <button class="follow-button">已关注</button>
+            </view>
+        </block>
+    </view>
+</view>

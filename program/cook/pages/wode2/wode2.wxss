@@ -1,0 +1,119 @@
+/* app.wxss */
+.container {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: flex-start; /* 头像靠左 */
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px; /* 头像和昵称之间的间距 */
+}
+
+.info {
+  text-align: left; /* 昵称和个性签名靠左 */
+}
+
+.nickname {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.introduction {
+  color: #888;
+  font-size: 14px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between; /* 分开模块 */
+  flex-wrap: wrap; /* 换行 */
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item {
+  width: 30%; /* 每个模块占宽度的30% */
+  text-align: center;
+  margin-bottom: 10px; /* 模块之间的间距 */
+  color: #555;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.points {
+  text-align: center;
+  margin-top: 20px;
+  color: #ff6600;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 昵称样式 */
+.nickname {
+  font-size: 24px; /* 字体大小 */
+  font-weight: bold; /* 字体加粗 */
+  color: #333; /* 字体颜色 */
+  text-align: center; /* 文本居中 */
+  margin-top: 10px; /* 顶部外边距 */
+}
+
+/* 个性签名样式 */
+.introduction {
+  font-size: 16px; /* 字体大小 */
+  color: rgb(39, 28, 78); /* 字体颜色 */
+  text-align: center; /* 文本居中 */
+  margin-top: 5px; /* 顶部外边距 */
+}
+
+.logout {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #ff3b30;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* 返回按钮样式 */
+.back-button {
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.back-icon {
+  width: 20rpx;
+  height: 20rpx;
+}

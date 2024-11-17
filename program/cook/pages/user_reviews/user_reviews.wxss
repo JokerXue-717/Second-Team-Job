@@ -1,0 +1,58 @@
+/* 用户评价列表 */
+.reviews-list {
+  padding: 30rpx;
+}
+
+/* 单个评价项 */
+.review-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20rpx;
+}
+
+/* 评价内容 */
+.review-content {
+  font-size: 18rpx; /* 放大字体大小 */
+  color: #333;
+  padding: 50rpx; /* 增加 padding */
+  background-color: #f9f9f9; /* 设置背景颜色 */
+  border-radius: 25rpx; /* 圆角 */
+  border: 1px solid #ccc; /* 边框 */
+}
+
+/* 评价文本 */
+.review-text {
+  font-size: 30rpx; /* 放大文本 */
+  line-height: 1.5; /* 增加行高 */
+}
+
+/* 评价者信息 */
+.reviewer-info {
+  display: flex;
+ 
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.reviewer-avatar {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+
+.reviewer-name {
+  font-size: 30rpx;
+  color: #666;
+}
+
+.review-rating {
+  margin-left: auto;
+}
+
+.star-rating {
+  font-size: 30rpx;
+  color: #ff9800;
+}
