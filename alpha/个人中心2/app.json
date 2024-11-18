@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/personal/wode2/wode2",
+    "pages/personal/dachuriji/dachuriji",
+    "pages/personal/dachuriji2/dachuriji2",
+    "pages/personal/dachuriji3/dachuriji3",
+    "pages/personal/guanzhu/guanzhu",
+    "pages/personal/guanzhuren/guanzhuren",
+    "pages/personal/liulanjilu/liulanjilu",
+    "pages/personal/yinshijihua/yinshijihua"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

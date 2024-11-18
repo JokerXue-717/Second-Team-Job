@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/ai_home/ai_home",
+    "pages/recipe_collection/recipe_collection",
+    "pages/recipe_detail/recipe_detail",
+    "pages/user_reviews/user_reviews",
+    "pages/recipe_detail1/recipe_detail1",
+    "pages/category/category",
+    "pages/detail/detail",
+    "pages/publish/publish",
+    "pages/square/square",
+    "pages/search/search",
+    "pages/msqindex/msqindex",
+    "pages/wode2/wode2",
+    "pages/dachuriji/dachuriji",
+    "pages/dachuriji2/dachuriji2",
+    "pages/dachuriji3/dachuriji3",
+    "pages/guanzhu/guanzhu",
+    "pages/guanzhuren/guanzhuren",
+    "pages/liulanjilu/liulanjilu",
+    "pages/yinshijihua/yinshijihua"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

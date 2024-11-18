@@ -1,0 +1,10 @@
+<view class="container" style="height: 2166rpx; display: flex; box-sizing: border-box; position: relative;">
+  
+  <view class="post" wx:for="{{posts}}" wx:key="id" bindtap="navigateToDetail" data-id="{{item.id}}" style="position: relative; left: -1rpx; top: 108rpx">
+    <image style="width: 624rpx; height: 416rpx; display: inline-block; box-sizing: border-box" class="post-image" src="{{item.imageUrl}}" />
+    <text class="post-title">{{item.title}}</text>
+  </view>
+  
+  <!-- 加号按钮 -->
+  <button class="add-image" bindtap="navigateToPublish" style="position: absolute; left: 397rpx; top: 25rpx;">+</button>
+</view>

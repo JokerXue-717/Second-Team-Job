@@ -1,0 +1,5 @@
+<view class="publish-container">
+  <button class="add-image">+</button>
+  <button class="cancel-button">取消</button>
+  <button class="publish-button">发布笔记</button>
+</view>

@@ -1,0 +1,32 @@
+<view class="container">
+  <!-- 上半部分：对话框区域 -->
+  <scroll-view class="chat-area" scroll-y>
+    <block wx:for="{{messages}}" wx:key="index">
+      <view class="chat-message {{item.type}}" style="width: 618rpx; height: 125rpx; display: flex; box-sizing: border-box">
+        <!-- AI 回复头像 -->
+        <view wx:if="{{item.type === 'ai'}}" class="avatar-wrapper ai-avatar-wrapper">
+          <image class="avatar" src="{{item.avatarUrl}}" mode="aspectFill" style="position: relative; left: -24rpx; top: 0rpx"></image>
+        </view>
+        <text style="width: 333rpx; display: block; box-sizing: border-box">{{item.text}}</text>
+        <!-- 用户回复头像 -->
+        <view wx:if="{{item.type === 'user'}}" class="avatar-wrapper user-avatar-wrapper">
+          <image class="avatar" src="{{item.avatarUrl}}" mode="aspectFill"></image>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+
+  <!-- 中部：输入框和发送按钮 -->
+  <view class="input-area">
+    <input class="input-box" placeholder="请输入内容..." bindinput="onInputChange" />
+    <button class="send-button" bindtap="onSendMessage">确认</button>
+  </view>
+
+  <!-- 底部：导航栏 -->
+  <view class="nav-bar">
+    <button bindtap="navigateToAi" class="nav-button active" style="position: relative; left: 285rpx; top: -2rpx; width: 160rpx; display: block; box-sizing: border-box">AI 问答</button>
+    <button bindtap="navigateToRecipes" class="nav-button" style="position: relative; left: -21rpx; top: 106rpx">食谱广场</button>
+    <button bindtap="navigateToFoodCircle" class="nav-button" style="position: relative; left: 42rpx; top: -1rpx">美食圈</button>
+    <button bindtap="navigateToProfile" class="nav-button" style="position: relative; left: -265rpx; top: 106rpx">个人中心</button>
+  </view>
+</view>

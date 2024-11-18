@@ -1,0 +1,30 @@
+<view class="container">
+  <!-- 返回键 -->
+  <navigator url="/pages/previous_page/previous_page" class="back-button">
+    <image src="https://img.51miz.com/Element/00/77/80/10/c6ce1c01_E778010_19c1ee77.png" class="back-icon"/>
+  </navigator>
+
+  <!-- 页面标题 -->
+  <text class="title">我的菜谱收藏</text>
+
+  <!-- 菜谱列表 -->
+  <view class="recipe-list">
+    <view class="recipe-item" wx:for="{{recipes}}" wx:key="id">
+      <!-- 点击图片跳转到该菜谱 -->
+      <navigator url="/pages/recipe_detail/recipe_detail?id={{item.id}}" class="recipe-image-link">
+        <image src="{{item.imageUrl}}" class="recipe-image"/>
+      </navigator>
+
+      <view class="recipe-info">
+        <!-- 菜名 -->
+        <text class="recipe-name">{{item.name}}</text>
+
+        <!-- 发布者头像和名字，点击跳转到发布者主页 -->
+        <navigator url="/pages/author_home/author_home?id={{item.authorId}}" class="author-info">
+          <image src="{{item.authorAvatar}}" class="author-avatar"/>
+          <text class="author-name">{{item.authorName}}</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

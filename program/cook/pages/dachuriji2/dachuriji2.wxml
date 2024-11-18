@@ -1,0 +1,11 @@
+<view class="container">
+    
+    <view class="date">
+        <text>2024年10月23日</text>
+    </view>
+    <view class="prompt">
+        <text>未来的大厨，请写下你的今日日记吧！</text>
+    </view>
+    <textarea class="diary-input" placeholder="输入你的日记..." bindinput="onInput"></textarea>
+    <button class="save-button" bindtap="saveDiary">保存</button>
+</view>

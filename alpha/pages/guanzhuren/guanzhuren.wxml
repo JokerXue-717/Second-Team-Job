@@ -1,0 +1,30 @@
+<!-- pages/personal/guanzhuren/guanzhuren.wxml -->
+<view class="container">
+    <view class="header">
+    </view>
+    <view class="profile-header" style="position: relative; left: -1rpx; top: -285rpx; width: 691rpx; height: 231rpx; display: flex; box-sizing: border-box">
+        <view class="avatar-container">
+            <image class="avatar" src="{{avatar}}" mode="circle" style="width: 149rpx; height: 145rpx; display: inline-block; box-sizing: border-box"></image>
+        </view>
+        <view class="profile-info">
+            <text class="nickname">{{nickname}}</text>
+            <view class="stats">
+                <text style="position: relative; left: 37rpx; top: 0rpx">关注: {{followCount}}</text>
+                <text style="position: relative; left: -29rpx; top: 0rpx">粉丝: {{fansCount}}</text>
+            </view>
+            <button class="follow-button" style="position: relative; left: 1rpx; top: 22rpx">已关注</button>
+        </view>
+    </view>
+    <view class="posts-container">
+        <!-- 假设有多个帖子 -->
+        <block wx:for="{{posts}}" wx:key="index">
+            <view class="post-item" style="position: relative; left: 0rpx; top: -339rpx">
+                <image class="post-image" src="{{item.image}}" mode="aspectFill"></image>
+                <view class="post-info">
+                    <text class="post-title">{{item.title}}</text>
+                    <text class="post-description">{{item.description}}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

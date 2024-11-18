@@ -1,0 +1,22 @@
+<view class="container" style="height: 1083rpx; display: flex; box-sizing: border-box">
+    <view class="header">
+        <text>大厨日记</text>
+    </view>
+    <picker mode="date" start="2003-10-31" end="2024-10-31" bindchange="onDateChange">
+        <view class="picker" style="width: 241rpx; height: 85rpx; display: block; box-sizing: border-box">
+            <text>{{selectedDate}}</text>
+        </view>
+    </picker>
+    <view class="calendar">
+        <!-- 日历组件 -->
+    </view>
+    <view class="footer">
+        <text style="width: 199rpx; display: block; box-sizing: border-box; position: relative; left: -54rpx; top: 52rpx; height: 52rpx">连续签到 {{continuousSignDays}} 天</text>
+        <text style="position: relative; left: 89rpx; top: 52rpx; width: 235rpx; height: 52rpx; display: block; box-sizing: border-box">累计签到 {{totalSignDays}} 天</text>
+    </view>
+    <button class="circle-button sign-button" bindtap="toggleSignStatus" style="position: relative; left: -181rpx; top: 92rpx; width: 241rpx; height: 154rpx; display: flex; box-sizing: border-box">{{signText}}</button>
+    <button class="circle-button add-button" bindtap="onAdd" style="position: relative; left: 177rpx; top: -157rpx; width: 243rpx; height: 154rpx; display: flex; box-sizing: border-box">+</button>
+</view>
+<navigator url="../dachuriji3/dachuriji3">
+    <icon type="success" size="40" style="width: 79rpx; height: 75rpx; display: inline-block; box-sizing: border-box; position: relative; left: 524rpx; top: -881rpx"></icon>
+</navigator>

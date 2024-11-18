@@ -1,0 +1,83 @@
+<view class="container">
+  <!-- 返回按钮 -->
+  <view class="back-button" bindtap="goBack">
+    <image class="back-icon" src="https://img.51miz.com/Element/00/77/80/10/c6ce1c01_E778010_19c1ee77.png" mode="aspectFill" style="width: 70rpx; height: 68rpx; display: inline-block; box-sizing: border-box; position: relative; left: -333rpx; top: -175rpx"></image>
+  </view>
+
+  <!-- 菜名 -->
+  <view class="recipe-name">
+    <text class="name" style="position: relative; left: -22rpx; top: -239rpx">青椒肉丝</text>
+  </view>
+
+  <!-- 菜图片 -->
+  <image class="recipe-image" src="https://ts1.cn.mm.bing.net/th/id/R-C.2a6e617d32f434dea7ef595f21a62218?rik=VAWinPn6aV%2f7gg&riu=http%3a%2f%2fk.sinaimg.cn%2fn%2fsinacn20191215ac%2f322%2fw640h482%2f20191215%2f8d2d-ikvenfs9061148.jpg%2fw700d1q75cms.jpg&ehk=5qtS2Og%2bbBR4ogqQfym%2f%2bQTQY23Ix4ri%2bDm1gloSo24%3d&risl=&pid=ImgRaw&r=0" mode="widthFix" style="position: relative; left: -2rpx; top: -205rpx; width: 493rpx; height: 383rpx; display: block; box-sizing: border-box"></image>
+
+  <!-- 滚动区域: 材料介绍 -->
+  <scroll-view class="scroll-area" scroll-y="true">
+    <view class="section">
+      <text class="section-title">材料介绍</text>
+      <text class="section-content" style="position: relative; left: 0rpx; top: 0rpx">材料准备：猪里脊肉 - 200克（肉质鲜嫩，适合炒制）
+青椒 - 2-3个（根据个人口味和青椒的大小调整）
+大蒜 - 3瓣（切片或切末）
+生姜 - 一小块（切片或切末）
+干辣椒 - 适量（根据个人口味调整）
+淀粉 - 适量（用于腌制肉丝）
+盐 - 适量
+生抽 - 适量（用于调味）
+料酒 - 适量（去腥增香）
+白糖 - 少许（提鲜）
+食用油 - 适量（用于炒菜）</text>
+    </view>
+
+    <!-- 制作步骤 -->
+    <view class="section">
+      <text class="section-title">制作步骤</text>
+      <text class="section-content">
+        1. 腌制肉丝
+将猪里脊肉洗净，切成细丝。
+在肉丝中加入适量的料酒、生抽、盐和淀粉，搅拌均匀后腌制10-15分钟。
+2. 准备配菜
+青椒洗净，去籽后切成细丝。
+大蒜和生姜切片或切末。
+干辣椒切段（根据个人口味调整）。
+3. 炒制肉丝
+热锅凉油，油热后先下入腌好的肉丝快速翻炒至变色，盛出备用。
+4. 炒制配菜
+锅中留底油，放入大蒜和生姜爆香。
+加入干辣椒段，炒出香味。
+倒入青椒丝，快速翻炒至青椒变软。
+5. 混合炒制
+将炒好的肉丝重新倒入锅中，加入适量的生抽、盐和白糖调味。
+快速翻炒均匀，使肉丝和青椒充分混合。
+炒至青椒熟透，肉丝完全熟透。
+6. 出锅装盘
+将炒好的青椒肉丝盛入盘中，可以撒上一些葱花或者香菜点缀。
+小贴士
+肉丝腌制：腌制肉丝时加入淀粉可以使肉丝更加嫩滑。
+火候控制：炒制时火候要适中，避免肉丝炒老。
+调味：根据个人口味调整盐和糖的比例，可以适量加入一些鸡精或味精提鲜。
+      </text>
+    </view>
+  </scroll-view>
+
+  <!-- 用户评价 -->
+  <view class="user-reviews" style="position: relative; left: -1rpx; top: -77rpx">
+    <view class="review-item" style="position: relative; left: 0rpx; top: 35rpx">
+      <!-- 评价内容 -->
+      <view class="review-content">
+        
+      </view>
+      <!-- 评价者信息 -->
+      <view class="reviewer-info" style="position: relative; left: 0rpx; top: 97rpx">
+        <image class="reviewer-avatar" src="https://c-ssl.duitang.com/uploads/item/201608/01/20160801221138_fxjyK.jpeg" mode="aspectFill" style="width: 116rpx; height: 95rpx; display: inline-block; box-sizing: border-box"></image>
+        <text class="reviewer-name" style="position: relative; left: 54rpx; top: -35rpx">小明</text>
+        <view class="review-rating">
+          <!-- 星星评分 -->
+          <text class="star-rating" style="position: relative; left: 126rpx; top: 1rpx">⭐⭐⭐⭐⭐</text>
+        </view>
+      </view>
+    </view>
+    <!-- 更多评价按钮 -->
+    <button class="more-reviews-btn" bindtap="navigateToMoreReviews" style="position: relative; left: -54rpx; top: 164rpx">更多评价</button>
+  </view>
+</view>

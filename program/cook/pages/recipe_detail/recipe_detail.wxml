@@ -1,0 +1,53 @@
+<view class="container">
+  <!-- 返回按钮 -->
+  <view class="back-button" bindtap="goBack">
+    <image class="back-icon" src="https://img.51miz.com/Element/00/77/80/10/c6ce1c01_E778010_19c1ee77.png" mode="aspectFill" style="width: 49rpx; height: 54rpx; display: inline-block; box-sizing: border-box"></image>
+  </view>
+
+  <!-- 菜名 -->
+  <view class="recipe-name">
+    <text class="name" style="position: relative; left: 0rpx; top: -31rpx">糖醋排骨</text>
+  </view>
+
+  <!-- 菜图片 -->
+  <image class="recipe-image" src="https://img.redocn.com/sheji/20230927/tangcupaigu_13114744.jpg" mode="widthFix" style="position: relative; left: -2rpx; top: -39rpx; width: 493rpx; height: 383rpx; display: block; box-sizing: border-box"></image>
+
+  <!-- 滚动区域: 材料介绍 -->
+  <scroll-view class="scroll-area" scroll-y="true">
+    <view class="section">
+      <text class="section-title">材料介绍</text>
+      <text class="section-content">材料准备：排骨（最好是肋排）：500克生姜：几片大蒜：3瓣青葱：1根料酒：1汤匙酱油：2汤匙（生抽）白糖：3汤匙白醋：4汤匙清水：适量盐：适量淀粉：适量（用于裹排骨）食用油：适量。</text>
+    </view>
+
+    <!-- 制作步骤 -->
+    <view class="section">
+      <text class="section-title">制作步骤</text>
+      <text class="section-content">
+        1. 排骨洗净，切段，用清水焯水备用。  
+        2. 锅中加油，放入葱姜蒜炒香，加入糖，醋，酱油和料酒，煮开后加入排骨。  
+        3. 中小火煮30分钟，至排骨入味，汤汁浓稠即可。
+      </text>
+    </view>
+  </scroll-view>
+
+  <!-- 用户评价 -->
+  <view class="user-reviews" style="position: relative; left: -1rpx; top: -77rpx">
+    <view class="review-item" style="position: relative; left: 0rpx; top: 35rpx">
+      <!-- 评价内容 -->
+      <view class="review-content">
+        <text class="review-text">非常好吃，味道浓郁，回味无穷！</text>
+      </view>
+      <!-- 评价者信息 -->
+      <view class="reviewer-info">
+        <image class="reviewer-avatar" src="https://c-ssl.duitang.com/uploads/item/201608/01/20160801221138_fxjyK.jpeg" mode="aspectFill"></image>
+        <text class="reviewer-name">小明</text>
+        <view class="review-rating">
+          <!-- 星星评分 -->
+          <text class="star-rating">⭐⭐⭐⭐⭐</text>
+        </view>
+      </view>
+    </view>
+    <!-- 更多评价按钮 -->
+    <button class="more-reviews-btn" bindtap="navigateToMoreReviews" style="position: relative; left: 0rpx; top: -102rpx">更多评价</button>
+  </view>
+</view>

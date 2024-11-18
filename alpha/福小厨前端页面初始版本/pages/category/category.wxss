@@ -1,0 +1,29 @@
+.container {
+  padding: 20px;
+}
+
+.category-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.recipe-list {
+  margin-top: 10px;
+}
+
+.recipe-item {
+  display: flex;           /* 使用 Flexbox 布局 */
+  margin: 10px 0;        /* 每个菜品之间的间距 */
+}
+
+.recipe-image {
+  width: 100px;          /* 设定图片宽度 */
+  height: 100px;         /* 设定图片高度 */
+  margin-right: 10px;    /* 图片与文字之间的间距 */
+}
+
+.recipe-name {
+  align-self: center;    /* 使文字垂直居中 */
+  font-size: 18px;
+}

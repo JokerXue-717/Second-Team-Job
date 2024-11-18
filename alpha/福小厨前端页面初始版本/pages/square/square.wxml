@@ -1,0 +1,64 @@
+<view class="container">
+  <!-- 返回按钮 -->
+  <button bindtap="navigateBack">返回</button>
+
+  <!-- 搜索模块 -->
+  <view class="search-module">
+    <button bindtap="navigateToSearch">搜索</button>
+  </view>
+
+  <!-- 今日推荐菜谱 -->
+  <view class="recommended-recipe">
+    <text class="recommendation-text">今日推荐菜谱</text>
+  </view>
+
+  <!-- 图片模块 -->
+  <swiper class="image-swiper" indicator-dots="true" autoplay="false" interval="3000" duration="500">
+    <swiper-item>
+      <image src="https://tse1-mm.cn.bing.net/th/id/OIP-C.s6dpfSeTuglKhh1UbDEZDQHaE8?w=285&h=190&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="slide-image" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://tse4-mm.cn.bing.net/th/id/OIP-C.XBgC722_HMgjgITehYzfEQHaEK?w=308&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="slide-image" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://tse3-mm.cn.bing.net/th/id/OIP-C.oTlzfP7zbVK9tfXJM2yBiQHaE8?w=197&h=190&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="slide-image" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 菜品分类图标模块 -->
+  <view class="category-icons">
+    <view class="category-row">
+      <view class="category-item" bindtap="navigateToCategory" data-category="category1">
+        <image src="https://ts3.cn.mm.bing.net/th?id=OIP-C.VHkoxFlDN69c6lsI9SP2nAHaJ4&w=216&h=288&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      </view>
+      <view class="category-item" bindtap="navigateToCategory" data-category="category2">
+        <image src="https://ts4.cn.mm.bing.net/th?id=OIP-C.prky5k_CuywFD1K9GvB2agHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      </view>
+      <view class="category-item" bindtap="navigateToCategory" data-category="category3">
+        <image src="https://ts2.cn.mm.bing.net/th?id=OIP-C.EzS3pKQAjC0__fo4DcPLjgHaGA&w=277&h=225&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      </view>
+    </view>
+    <view class="category-row">
+      <view class="category-item" bindtap="navigateToCategory" data-category="category4">
+        <image src="https://ts1.cn.mm.bing.net/th?id=OIP-C.ksmQJHit8Uq1XWnU5OFnHwHaLH&w=204&h=306&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      </view>
+      <view class="category-item" bindtap="navigateToCategory" data-category="category5">
+        <image src="https://ts4.cn.mm.bing.net/th?id=OIP-C.YKm9qVmfG0DC77cRcbZ8cAHaHf&w=248&h=251&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      </view>
+      <view class="category-item" bindtap="navigateToCategory" data-category="category6">
+        <image src="https://cn.bing.com/images/search?view=detailV2&ccid=UARn9eWk&id=7617D4AC8518B34E6AA39099BC69FE9F503A88A7&thid=OIP.UARn9eWky26z_vB0XGAZegHaE7&mediaurl=https%3a%2f%2fimg.zcool.cn%2fcommunity%2f01d9585cbb4e0aa801208f8bec0cd1.jpg%401280w_1l_2o_100sh.jpg&exph=853&expw=1280&q=%e5%ae%b6%e5%b8%b8%e5%b0%8f%e8%8f%9c%e5%9b%be%e7%89%87&simid=608029961168755705&FORM=IRPRST&ck=738082838DF4DD8D28BD0EBF72154224&selectedIndex=4&itb=0" class="category-icon"></image>
+      </view>
+    </view>
+    <view class="category-row">
+      <view class="category-item" bindtap="navigateToCategory" data-category="category7">
+        <image src="https://ts4.cn.mm.bing.net/th?id=OIP-C.LwCqklKaUClh-O_e_mLVuQHaLH&w=204&h=306&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      </view>
+      <view class="category-item" bindtap="navigateToCategory" data-category="category8">
+        <image src="https://ts1.cn.mm.bing.net/th?id=OIP-C.GjZ6sifj-0x3jkfIwOfzYQHaE7&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      </view>
+      <view class="category-item" bindtap="navigateToCategory" data-category="category9">
+        <image src="https://ts2.cn.mm.bing.net/th?id=OIP-C.hi0ahAxdqyLVNfwqZPjuBQHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="category-icon"></image>
+      </view>
+    </view>
+  </view>
+</view>

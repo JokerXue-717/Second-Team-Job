@@ -1,0 +1,59 @@
+/* pages/collection/collection.wxss */
+.container {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 18px;
+  color: #333;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap; /* 允许换行 */
+  gap: 10px; /* 项目之间的间距 */
+}
+
+.recipe-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(50% - 10px); /* 每个项目占据一半的宽度，减去间距 */
+  min-width: 300px; /* 最小宽度，防止过窄 */
+}
+
+.recipe-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.recipe-info {
+  flex: 1;
+}
+
+.recipe-name {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.recipe-author {
+  font-size: 10px;
+  color: rgb(131, 20, 20);
+}

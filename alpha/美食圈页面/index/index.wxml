@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="post" wx:for="{{posts}}" wx:key="id">
+    <image class="post-image" src="{{item.imageUrl}}" />
+    <text class="post-title">{{item.title}}</text>
+    <text class="post-description">{{item.description}}</text>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="title">
+    天下第一大厨
+  </view>
+  <scroll-view class="message-list" scroll-y="true" scroll-into-view="{{scrollIntoView}}">
+    <view class="message-item" wx:for="{{ messages }}" wx:key="index">
+      <view class="message-content {{item.type}}">
+        <view class="message-text">{{ item.content }}</view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="input-container">
+    <input style="position: relative; left: 0rpx; top: -66rpx; width: 387rpx; display: block; box-sizing: border-box; height: 66rpx" class="input" placeholder="请输入消息" bindinput="handleInput" value="{{ inputMessage }}" />
+    <button class="send-button" bindtap="sendMessage" style="position: relative; left: 25rpx; top: -66rpx; width: 308rpx; display: block; box-sizing: border-box">发送</button>
+  </view>
+  <view class="navbar">
+    <view class="nav-item" data-nav="AI问答" bindtap="onNavItemTap" style="position: relative; left: 0rpx; top: -40rpx">AI问答</view>
+    <view class="nav-item" data-nav="食谱广场" bindtap="onNavItemTap" style="position: relative; left: 0rpx; top: -39rpx">食谱广场</view>
+    <view class="nav-item" data-nav="美食圈" bindtap="onNavItemTap" style="position: relative; left: 0rpx; top: -39rpx">美食圈</view>
+    <view class="nav-item" data-nav="个人中心" bindtap="onNavItemTap" style="position: relative; left: -1rpx; top: -39rpx">个人中心</view>
+  </view>
+</view>

@@ -1,0 +1,103 @@
+/* 返回按钮样式 */
+.back-button {
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  z-index: 999;
+}
+
+.back-icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.recipe-name {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.scroll-area {
+  margin-bottom: 30px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-content {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.user-reviews {
+  margin-top: 30px;
+}
+
+.review-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.review-content {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+}
+
+.reviewer-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.reviewer-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.review-rating {
+  font-size: 14px;
+  color: #FFD700;
+}
+
+.more-reviews-btn {
+  margin-top: 100px;
+  background-color: #1aad19;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+}

@@ -1,0 +1,50 @@
+<!-- app.wxml -->
+
+<view class="container" style="position: relative; left: -1rpx; top: 0rpx">
+    <view class="stats" style="position: relative; left: 208rpx; top: -164rpx; width: 254rpx; height: 174rpx; display: flex; box-sizing: border-box">
+        
+        <view class="stat-item" style="width: 224rpx; height: 150rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+          <text style="position: relative; left: -1rpx; top: 0rpx">当前体重</text>
+          
+          </view>
+
+
+    </view>
+<view class="stats" style="position: relative; left: -172rpx; top: -375rpx; width: 254rpx; height: 174rpx; display: flex; box-sizing: border-box">
+        <view class="stat-item">
+            <text style="position: relative; left: 2rpx; top: 0rpx">本周实际摄入</text>
+            <text style="position: relative; left: 2rpx; top: 28rpx">9489千卡</text>
+        </view>
+        
+    </view>
+
+    <view class="intake" style="position: relative; left: 2rpx; top: -349rpx; width: 591rpx; height: 206rpx; display: block; box-sizing: border-box">
+        <text>今日实际摄入</text>
+        <text style="position: relative; left: 58rpx; top: 0rpx">2000千卡</text>
+        <view class="nutrients">
+            <text class="protein">蛋白 100/136</text>
+            <text class="carbs">碳水 56/102</text>
+            <text class="fat" style="width: 191rpx; height: 81rpx; display: block; box-sizing: border-box">脂肪 115/275</text>
+        </view>
+    </view>
+    <view class="meal-plans" style="position: relative; left: 2rpx; top: -300rpx; height: 435rpx; display: block; box-sizing: border-box">
+      <text>早餐：</text>
+      <view class="meal">
+        <text>燕麦粥 (50克燕麦) ：提供约8克蛋白质，38克碳水化合物</text>
+        <text>低脂牛奶 (200毫升) ：提供约6克蛋白质，10克脂肪，10克碳水化合物</text>
+        <text>一个鸡蛋 (50克) ：提供约6克蛋白质</text>
+      </view>
+      <text>上午加餐：</text>
+      <view class="meal">
+        <text>一个中等大小的苹果 (150克) ：提供约0.3克蛋白质，20克碳水化合物</text>
+        <text>一小把坚果 (30克) ：提供约6克蛋白质，15克脂肪，10克碳水化合物</text>
+
+
+      </view>
+    
+      
+      </view>
+
+
+</view>
+<text style="position: relative; left: 533rpx; top: -1375rpx">68公斤</text>

@@ -1,0 +1,62 @@
+<view class="container" style="height: 881rpx; display: flex; box-sizing: border-box">
+  <view class="profile" style="position: relative; left: -243rpx; top: -10rpx">
+    <image class="avatar" src="https://tse3-mm.cn.bing.net/th/id/OIP-C.yp-D-KHI3e2nN4eMBJcEVAAAAA?rs=1&pid=ImgDetMain" />
+
+  </view>
+  <view class="stats" style="width: 575rpx; height: 81rpx; display: flex; box-sizing: border-box; position: relative; left: -1rpx; top: -53rpx">
+    <view class="stat-item">
+      <text>收藏菜谱</text>
+      <text>{{collections}}</text>
+    </view>
+    <view class="stat-item">
+      <text>关注</text>
+      <text>{{following}}</text>
+    </view>
+    <view class="stat-item">
+      <text>帖子</text>
+      <text>{{posts}}</text>
+    </view>
+  </view>
+  <view class="menu" style="width: 516rpx; height: 47rpx; display: flex; box-sizing: border-box; position: relative; left: -2rpx; top: 52rpx">
+    <navigator url="../dachuriji/dachuriji">大厨日记</navigator>
+    <navigator url="/pages/records/records">浏览记录</navigator>
+    <navigator url="/pages/plans/plans" style="position: relative; left: 1rpx; top: 0rpx">我的计划</navigator>
+  </view>
+  <view class="points" style="width: 381rpx; height: 81rpx; display: block; box-sizing: border-box; position: relative; left: -4rpx; top: 41rpx">
+    <text style="position: relative; left: 1rpx; top: 24rpx">我的积分: {{points}}</text>
+  </view>
+  <button class="logout" bindtap="logout" style="position: relative; left: -4rpx; top: 14rpx; width: 516rpx; height: 81rpx; display: block; box-sizing: border-box">退出登录</button>
+
+
+
+  
+
+
+
+
+  </view>
+<image style="position: relative; width: 87rpx; height: 91rpx; display: inline-block; box-sizing: border-box; left: 333rpx; top: -441rpx" src="https://pic.616pic.com/ys_bnew_img/00/25/63/91Byzo4WnS.jpg"/>
+<image style="position: relative; left: 424rpx; top: -441rpx; width: 89rpx; height: 91rpx; display: inline-block; box-sizing: border-box" src="https://img.ixintu.com/download/jpg/20200714/66e0eb107cc71318c55903f167a30610_512_506.jpg!ys"/>
+<image style="position: relative; width: 89rpx; height: 91rpx; display: inline-block; box-sizing: border-box; left: -25rpx; top: -441rpx" src="https://img.51miz.com/Element/00/77/63/86/a927560a_E776386_38c4fe21.png"/>
+<view class="nickname" style="width: 339rpx; background: #d1d1d1; height: 70rpx; display: block; box-sizing: border-box; position: relative; left: 306rpx; top: -935rpx">奋斗的青春</view>
+  <view class="introduction" style="width: 410rpx; background: #d1d1d1; height: 47rpx; display: block; box-sizing: border-box; position: relative; left: 306rpx; top: -881rpx">我想成为天下第一大厨</view>
+
+
+
+
+
+
+
+
+
+
+
+        
+      
+
+
+
+
+
+
+

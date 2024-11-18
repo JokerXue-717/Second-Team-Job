@@ -1,0 +1,17 @@
+<!-- pages/collection/collection.wxml -->
+<view class="container">
+    <view class="header">
+        <text class="title">浏览记录</text>
+    </view>
+    <view class="recipe-list">
+        <block wx:for="{{recipes}}" wx:key="index">
+            <view class="recipe-item" data-id="{{item.id}}" bindtap="navigateToRecipeDetail">
+                <image class="recipe-image" src="{{item.image}}" mode="aspectFit" />
+                <view class="recipe-info">
+                    <text class="recipe-name">{{item.name}}</text>
+                    <text class="recipe-author">作者: {{item.author}}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

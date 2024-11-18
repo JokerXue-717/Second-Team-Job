@@ -1,0 +1,44 @@
+<view class="container" style="height: 1404rpx; display: flex; box-sizing: border-box; position: relative; left: 0rpx; top: 77rpx">
+  <!-- 上半部分：对话框区域 -->
+  <scroll-view class="chat-area" scroll-y style="height: 1104rpx; display: block; box-sizing: border-box; left: 1rpx; top: 100rpx">
+    <block wx:for="{{messages}}" wx:key="index">
+      <view class="chat-message {{item.type}}" style="width: 579rpx; height: 152rpx; display: flex; box-sizing: border-box">
+        <!-- AI 回复头像 -->
+        <view wx:if="{{item.type === 'ai'}}" class="avatar-wrapper ai-avatar-wrapper">
+          <image class="avatar" src="{{item.avatarUrl}}" mode="aspectFill"></image>
+        </view>
+        <text>{{item.text}}</text>
+        <!-- 用户回复头像 -->
+        <view wx:if="{{item.type === 'user'}}" class="avatar-wrapper user-avatar-wrapper">
+          <image class="avatar" src="{{item.avatarUrl}}" mode="aspectFill"></image>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+
+  <!-- 中部：输入框和发送按钮 -->
+  <view class="input-area" style="position: relative; left: 1rpx; top: 874rpx">
+    <input class="input-box" placeholder="请输入内容..." bindinput="onInputChange" />
+    <button class="send-button" bindtap="onSendMessage">发送</button>
+  </view>
+
+  <!-- 底部：导航栏 -->
+  <view class="nav-bar">
+    <button bindtap="navigateToAi" class="nav-button" style="position: relative; left: 0rpx; top: 139rpx; width: 195rpx; display: flex; box-sizing: border-box">
+      <image src="/images/ai_icon.png" class="nav-icon" />
+      AI 问答
+    </button>
+    <button bindtap="navigateToRecipes" class="nav-button" style="width: 195rpx; display: flex; box-sizing: border-box; left: -1rpx; top: 139rpx; position: relative">
+      <image src="/images/recipe_icon.png" class="nav-icon" />
+      食谱广场
+    </button>
+    <button bindtap="navigateToFoodCircle" class="nav-button" style="width: 168rpx; display: flex; box-sizing: border-box; left: 24rpx; top: 139rpx; position: relative">
+      <image src="/images/food_circle_icon.png" class="nav-icon" />
+      美食圈
+    </button>
+    <button bindtap="navigateToProfile" class="nav-button" style="width: 168rpx; display: flex; box-sizing: border-box; left: 24rpx; top: 139rpx; position: relative">
+      <image src="/images/profile_icon.png" class="nav-icon" />
+      个人中心
+    </button>
+  </view>
+</view>

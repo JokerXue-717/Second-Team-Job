@@ -1,0 +1,103 @@
+/* pages/personal/guanzhuren/guanzhuren.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #F5F5F5;
+}
+
+.header {
+  position: relative;
+  padding: 10rpx;
+}
+
+.back-icon {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 10rpx;
+  left: 10rpx;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  background-color: #FFFFFF;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  border-radius: 10rpx;
+  margin: 20rpx;
+}
+
+.avatar-container {
+  margin-right: 20rpx;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.nickname {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333333;
+}
+
+.description {
+  font-size: 24rpx;
+  color: #666666;
+  margin-top: 10rpx;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rpx;
+  color: #999999;
+}
+
+.follow-button {
+  margin-top: 20rpx;
+  background-color: #FF6B6B;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50rpx;
+  padding: 10rpx 20rpx;
+  font-size: 24rpx;
+}
+
+.posts-container {
+  padding: 20rpx;
+}
+
+.post-item {
+  display: flex;
+  margin-bottom: 20rpx;
+  background-color: #FFFFFF;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 20rpx;
+}
+
+.post-title {
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #333333;
+}
+
+.post-description {
+  font-size: 20rpx;
+  color: #666666;
+}

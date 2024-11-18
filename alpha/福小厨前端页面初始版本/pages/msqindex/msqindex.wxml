@@ -1,0 +1,12 @@
+<view class="container" style="height: 2166rpx; display: flex; box-sizing: border-box">
+  <!-- 返回按钮 -->
+  <button class="back-button" bindtap="navigateBack" style="position: fixed; left: 20rpx; top: 25rpx; height: 89rpx; display: block; box-sizing: border-box">返回</button>
+
+  <view class="post" wx:for="{{posts}}" wx:key="id" bindtap="navigateToDetail" data-id="{{item.id}}" style="position: relative; left: -1rpx; top: 205rpx">
+    <image style="width: 400rpx; height: 416rpx; display: inline-block; box-sizing: border-box" class="post-image" src="{{item.imageUrl}}" />
+    <text class="post-title">{{item.title}}</text>
+  </view>
+  
+  <!-- 加号按钮 -->
+  <button class="add-image" bindtap="navigateToPublish" style="position: fixed; left: 397rpx; top: 25rpx">+</button>
+</view>

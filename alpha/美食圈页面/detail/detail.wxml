@@ -1,0 +1,15 @@
+<view class="container">
+  <image class="detail-image" src="{{detail.imageUrl}}"/>
+  <view class="detail-info">
+    <text class="detail-title">{{detail.title}}</text>
+    <text class="detail-description">{{detail.description}}</text>
+    <view class="ingredients">
+      <text class="section-title">材料：</text>
+      <text>{{detail.ingredients}}</text>
+    </view>
+    <view class="steps">
+      <text class="section-title">步骤：</text>
+      <text wx:for="{{detail.steps}}" wx:key="*this" class="step">{{item}}</text>
+    </view>
+  </view>
+</view>

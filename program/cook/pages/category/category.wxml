@@ -1,0 +1,11 @@
+<view class="container">
+  <text class="category-title">{{category}} 分类菜品</text>
+  <view class="recipe-list">
+    <block wx:for="{{recipes}}" wx:key="index">
+      <view class="recipe-item">
+        <image src="{{item.image}}" class="recipe-image" mode="aspectFill"></image>
+        <text class="recipe-name">{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+</view>

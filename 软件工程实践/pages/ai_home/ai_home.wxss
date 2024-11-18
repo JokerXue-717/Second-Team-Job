@@ -1,0 +1,109 @@
+/* 页面整体布局 */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* 对话框区域 */
+.chat-area {
+  flex: 1;
+  padding: 10px;
+  overflow-y: scroll;
+  margin-top: -105px;
+  background-color: #ffffff;
+}
+
+.chat-message {
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.chat-message.ai {
+  align-self: flex-start;
+  background-color: #e6f7ff;
+  flex-direction: row; /* AI 回复消息时，头像放在左边 */
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  background-color: #cce5ff;
+  flex-direction: row-reverse; /* 用户消息时，头像放在右边 */
+}
+
+/* 头像样式 */
+.avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-avatar-wrapper {
+  margin-left: 100px; /* 用户头像左边距 */
+  
+}
+
+.ai-avatar-wrapper {
+  margin-right: 10px; /* AI 头像右边距 */
+}
+
+/* 输入框和发送按钮 */
+.input-area {
+  display: flex;
+  padding: 10px;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.input-box {
+  flex: 1;
+  height: 40px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.send-button {
+  margin-left: 10px;
+  padding: 5px 15px;
+  background-color: #1aad19;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* 导航栏 */
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.nav-button {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.nav-button.active {
+  color: #1aad19;        /* 设置颜色 */
+  font-weight: bold;     /* 设置加粗 */
+  font-size: 18px;       /* 设置字体大小 */
+}
+

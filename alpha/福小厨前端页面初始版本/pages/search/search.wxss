@@ -1,0 +1,21 @@
+.search-container {
+  display: flex;
+  align-items: center; /* 垂直居中对齐 */
+  padding: 15px;      /* 添加内边距 */
+}
+
+.search-input {
+  flex: 1;            /* 输入框占据全部剩余空间 */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;      /* 添加内边距 */
+  margin-right: 10px; /* 右侧间距 */
+}
+
+.search-button {
+  background-color: #ff0000; /* 按钮颜色 */
+  color: white;              /* 按钮文本颜色 */
+  border: none;              /* 无边框 */
+  border-radius: 5px;       /* 边角圆润 */
+  padding: 10px 15px;        /* 按钮内边距 */
+}

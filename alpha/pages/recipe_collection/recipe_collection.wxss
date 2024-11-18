@@ -1,0 +1,69 @@
+.container {
+  padding: 20px;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.back-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.recipe-item {
+  width: 160px;
+  text-align: center;
+}
+
+.recipe-image-link {
+  display: block;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.recipe-info {
+  margin-top: 10px;
+}
+
+.recipe-name {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.author-name {
+  font-size: 14px;
+  color: #888;
+}
